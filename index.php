@@ -8,6 +8,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <style>
+    @font-face {
+        font-family: 'roboto-condensed';
+        src: url('assets/fonts/roboto/Roboto-Condensed.ttf');
+
+        font-family: 'montserrat-regular';
+        src: url('assets/fonts/montserrat/Montserrat-Regular.otf');
+
+        font-family: 'montserrat-light';
+        src: url('assets/fonts/montserrat/Montserrat-Light.otf');
+    }
+    .f-roboto{
+        font-family: 'roboto-condensed', sans-serif;
+    }
+    .f-montserrat{
+        font-family: 'montserrat-light', sans-serif;
+    }
+    .f-montserrat-r{
+        font-family: 'montserrat-regular', sans-serif;
+    }
     a.nav-link{
         color: #000;
         font-size: 14px;
@@ -34,7 +53,6 @@
     .btn{
         border-radius: 25px;
         border: 1px solid #000;
-        margin: 50px 0 25px 0;
     }
     .paket-hosting-2 h3{
         font-weight: bold;
@@ -56,9 +74,6 @@
         background: #00a2f3;
         color: #fff;
     }
-    .live-chat h3{
-        margin-top: 40px;
-    }
     .footer{
         background: #303030;
         color: #fff;
@@ -70,8 +85,36 @@
     .footer a{
         color: #fff;
     }
-    .span-nb{
+    .nb-support{
         font-size: 12px;
+    }
+    .btn-primary{
+        background: 
+    }
+    .btn-berlangganan{
+        background: #00a2f3;
+    }
+    .btn-live-chat{
+        color: #fff;
+        border: 1px solid #fff;
+        background: #00a2f3;
+    }
+    .input-group-berlangganan{
+        border-top-right-radius: 25px !important;
+        border-bottom-right-radius: 25px !important;
+        background: #00a2f3;
+    }
+    input.form-control{
+        border-radius: 25px;
+    }
+    .recommend table tr td{
+        border: 1px solid #00a2f3;
+    }
+    .bg-blue{
+        background: #00a2f3;
+    }
+    .bg-blue-2{
+        background: #0069d9;
     }
 </style>
 </head>
@@ -131,7 +174,7 @@
             </nav>
             <div class="row py-5 headline">
                 <div class="col-md-6">
-                    <h1>PHP Hosting</h1>
+                    <h1 class="f-montserrat-r"><b>PHP Hosting</b></h1>
                     <p>Cepat, handal, penuh dengan modul PHP yang Anda butuhkan</p>
                     <ul>
                         <li>Solusi PHP untuk performa query yang lebih cepat.</li>
@@ -163,7 +206,7 @@
                 </div>
             </div>    
             <div class="diskon-hosting py-5">
-                <h2 class="text-center"><b>Paket Hosting Singapura yang Tepat</b></h2>
+                <h2 class="f-montserrat-r text-center"><b>Paket Hosting Singapura yang Tepat</b></h2>
                 <p class="text-center">Diskon 40% + Domain dan SSL Gratis untuk Anda</p>
             </div>    
             <div class="row">
@@ -171,7 +214,7 @@
                     <div class="paket-hosting">
                         <table class="table table-bordered">
                             <tr>
-                                <td><h3><b>Bayi</b></h3></td>
+                                <td><h3 class="f-montserrat-r"><b>Bayi</b></h3></td>
                             </tr>
                             <tr>
                                 <td><p><del>Rp 19.900</del></p></td>
@@ -193,7 +236,7 @@
                                         <b>Instant</b> Backup<br>
                                         <b>Unlimited SSL</b> Gratis Selamanya
                                     </p>
-                                    <button class="btn"><b>Pilih Sekarang</b></button>
+                                    <button class="btn mt-5"><b>Pilih Sekarang</b></button>
                                 </td>
                             </tr>
                         </table>
@@ -203,7 +246,7 @@
                     <div class="paket-hosting">
                         <table class="table table-bordered">
                             <tr>
-                                <td><h3><b>Pelajar</b></h3></td>
+                                <td><h3 class="f-montserrat-r"><b>Pelajar</b></h3></td>
                             </tr>
                             <tr>
                                 <td><p><del>Rp 46.900</del></p></td>
@@ -227,26 +270,26 @@
                                         <b>Domain Gratis</b> Selamanya<br>
                                         <b>Unlimited SSL</b> Gratis Selamanya
                                     </p>
-                                    <button class="btn"><b>Pilih Sekarang</b></button>
+                                    <button class="btn mt-5"><b>Pilih Sekarang</b></button>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="col-md-3 px-0">
-                    <div class="paket-hosting">
+                    <div class="paket-hosting recommend">
                         <table class="table table-bordered">
-                            <tr>
-                                <td><h3><b>Personal</b></h3></td>
+                            <tr class="bg-blue">
+                                <td><h3 class="f-montserrat-r text-white"><b>Personal</b></h3></td>
                             </tr>
-                            <tr>
-                                <td><p><del>Rp 58.900</del></p></td>
+                            <tr class="bg-blue">
+                                <td><p class="text-white"><del>Rp 58.900</del></p></td>
                             </tr>
-                            <tr>
-                                <td><p>Rp <b><span style="font-size: 40px;">38</span>.900</b>/bln</p></td>
+                            <tr class="bg-blue">
+                                <td><p class="text-white">Rp <b><span style="font-size: 40px;">38</span>.900</b>/bln</p></td>
                             </tr>
-                            <tr>
-                                <td><p><b>10.017</b> Pengguna Terdaftar</p></td>
+                            <tr class="bg-blue-2">
+                                <td><p class="text-white"><b>10.017</b> Pengguna Terdaftar</p></td>
                             </tr>
                             <tr>
                                 <td>
@@ -263,7 +306,7 @@
                                         <b>Private</b> Name Server<br>
                                         <b>SpamAssasin</b> Mail Protection
                                     </p>
-                                    <button class="btn"><b>Pilih Sekarang</b></button>
+                                    <button class="btn btn-primary mt-5"><b>Pilih Sekarang</b></button>
                                 </td>
                             </tr>
                         </table>
@@ -273,7 +316,7 @@
                     <div class="paket-hosting">
                         <table class="table table-bordered">
                             <tr>
-                                <td><h3><b>Bisnis</b></h3></td>
+                                <td><h3 class="f-montserrat-r"><b>Bisnis</b></h3></td>
                             </tr>
                             <tr>
                                 <td><p><del>Rp 109.900</del></p></td>
@@ -301,7 +344,7 @@
                                         <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><br>
                                         <b>SpamExpert</b> Pro Mail Protection
                                     </p>
-                                    <button class="btn"><b>Diskon 40%</b></button>
+                                    <button class="btn mt-5"><b>Diskon 40%</b></button>
                                 </td>
                             </tr>
                         </table>
@@ -309,7 +352,7 @@
                 </div>
             </div>
 
-            <h2 class="text-center mt-5">Powerfull dengan Limit PHP yang Lebih Besar</h2>
+            <h2 class="text-center mt-5 f-montserrat">Powerfull dengan Limit PHP yang Lebih Besar</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="row">
@@ -331,7 +374,7 @@
                 </div>
             </div>
 
-            <h2 class="text-center mt-5">Semua Paket Hosting Sudah Termasuk</h2>
+            <h2 class="text-center mt-5 f-montserrat">Semua Paket Hosting Sudah Termasuk</h2>
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="row align-items-end paket-hosting-2">
@@ -369,14 +412,14 @@
                 </div>
             </div>
             
-            <h2 class="text-center mt-5">Mendukung Penuh Framework Laravel</h2>
+            <h2 class="text-center mt-5 f-montserrat">Mendukung Penuh Framework Laravel</h2>
             <div class="row">
                 <div class="col-md-6">
                     <p>Tak perlu menggunakan dedicated server ataupun VPS yang mahal. Layanan PHP hosting murah kami mendukung penuh framework favorit Anda</p>
-                    <img class="img-responsive" src="assets/images/checklist.png"> Install Laravel 1 klik dengan Softaculous Installer.<br>
-                    <img class="img-responsive" src="assets/images/checklist.png"> Mendukung ekstensi PHP MCrypt, phar, mbstring, json, dan fileinfo.<br>
+                    <img class="img-responsive" src="assets/images/checklist.png"> Install Laravel <b>1 klik</b> dengan Softaculous Installer.<br>
+                    <img class="img-responsive" src="assets/images/checklist.png"> Mendukung ekstensi <b>PHP MCrypt, phar, mbstring, json,</b> dan <b>fileinfo.</b><br>
                     <img class="img-responsive" src="assets/images/checklist.png"> Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 5.6, PHP 7<br>
-                    <span class="span-nb">Nb. Composer dan SSH hanya tersedia pada paket Personal dan Bisnis</span><br>
+                    <p class="nb-support mt-3">Nb. <b>Composer</b> dan <b>SSH</b> hanya tersedia pada paket Personal dan Bisnis</p><br>
                     <button class="btn btn-primary">Pilih Hosting Anda</button>
                 </div>
                 <div class="col-md-6">
@@ -384,7 +427,7 @@
                 </div>
             </div>
             
-            <h2 class="text-center mt-5">Modul Lengkap untuk Menjalankan Aplikasi PHP Anda.</h2>
+            <h2 class="text-center mt-5 f-montserrat mb-5">Modul Lengkap untuk Menjalankan Aplikasi PHP Anda.</h2>
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <table class="table table-borderless">
@@ -425,9 +468,9 @@
                 </div>
             </div>
             
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-md-6">
-                    <h2>Linux Hosting yang Stabil dengan Teknologi LVE</h2>
+                    <h2 class="f-montserrat">Linux Hosting yang Stabil dengan Teknologi LVE</h2>
                     <p>SuperMicro <b>Intel Xeon 24-Cores</b> server dengan RAM <b>128 GB</b> dan teknologi <b>LVE CloudLinux</b> untuk stabilitas server Anda. Dilengkapi dengan <b>SSD</b> untuk kecepatan <b>MySQL</b> dan caching. Apache load balancer berbasis LiteSpeed Technologies, <b>CageFS</b>, security, <b>Raid-10</b> protection dan auto backup untuk keamanan website PHP Anda.</p>
                     <button class="btn btn-primary">Pilih Hosting Anda</button>
                 </div>
@@ -439,30 +482,33 @@
     </section>
     <section class="share-page"> 
         <div class="container">
-            <div class="row py-3">
-                <div class="col-md-6">
-                    <p>Bagikan jika Anda menyukai halaman ini.</p>
+            <div class="row py-4">
+                <div class="col-md-7">
+                    <h5 class="f-montserrat">Bagikan jika Anda menyukai halaman ini.</h5>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
+                    <img src="assets/images/logo-fb-share.png" class="img-responsive">
+                    <img src="assets/images/logo-twitter-share.png" class="img-responsive">
+                    <img src="assets/images/logo-google-share.png" class="img-responsive">
                 </div>
             </div> 
         </div> 
     </section>
     <section class="live-chat">
         <div class="container">
-            <div class="row py-3">
+            <div class="row py-5">
                 <div class="col-md-9">
-                    <h3>Perlu <b>BANTUAN?</b> Hubungi kami : <b>0274-5305505</b></h3>
+                    <h3 class="f-montserrat">Perlu <b>BANTUAN?</b> Hubungi kami : <b>0274-5305505</b></h3>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-primary"><i class="fa fa-comments" aria-hidden="true"></i> Live Chat</button>
+                    <button class="btn btn-live-chat"><i class="fa fa-comments" aria-hidden="true"></i> Live Chat</button>
                 </div>
             </div>
         </div>
     </section>
     <section class="footer">
         <div class="container">
-            <div class="row py-5">
+            <div class="row pt-5">
                 <div class="col-6 col-md-3">
                     <h5>Hubungi Kami</h5>
                     <p>0274-5305505<br>
@@ -487,18 +533,79 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <h5>SERVICE HOSTING</h5>
+                    <a href="">Hosting Murah</a><br>
+                    <a href="">Hosting Indonesia</a><br>
+                    <a href="">Hosting Singapura 5G</a><br>
+                    <a href="">Hosting PHP</a><br>
+                    <a href="">Hosting Wordpress</a><br>
+                    <a href="">Hosting Laravel</a>
                 </div>
                 <div class="col-6 col-md-3">
                     <h5>TUTORIAL</h5>
+                    <a href="">Knowledgebase</a><br>
+                    <a href="">Blog</a><br>
+                    <a href="">Cara Pembayaran</a>
                 </div>
+            </div>
+            <div class="row pt-5">
                 <div class="col-6 col-md-3">
                     <h5>TENTANG KAMI</h5>
+                    <a href="">Tim Niagahoster</a><br>
+                    <a href="">Karir</a><br>
+                    <a href="">Events</a><br>
+                    <a href="">Penawaran & Promo Spesial</a><br>
+                    <a href="">Kontak Kami</a>
                 </div>
                 <div class="col-6 col-md-3">
                     <h5>KENAPA PILIH NIAGAHOSTER?</h5>
+                    <a href="">Support Terbaik</a><br>
+                    <a href="">Garansi Harga Termurah</a><br>
+                    <a href="">Domain Gratis Selamanya</a><br>
+                    <a href="">Datacenter Hosting Terbaik</a><br>
+                    <a href="">Review Pelanggan</a>
                 </div>
                 <div class="col-6 col-md-3">
                     <h5>NEWSLETTER</h5>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text input-group-berlangganan"><a href="" class="btn-berlangganan">Berlangganan</a></div>
+                        </div>
+                    </div>
+                    <span>Dapatkan promo dan konten menarik dari penyedia hosting terbaik Anda</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="assets/images/logo-fb.png" class="img-responsive">
+                    <img src="assets/images/logo-twitter.png" class="img-responsive">
+                    <img src="assets/images/logo-google.png" class="img-responsive">
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-12 col-md-12">
+                    <h5>PEMBAYARAN</h5>
+                    <img src="assets/images/logo-bca.png" class="img-responsive">
+                    <img src="assets/images/logo-mandiri.png" class="img-responsive">
+                    <img src="assets/images/logo-bni.png" class="img-responsive">
+                    <img src="assets/images/logo-vis.png" class="img-responsive">
+                    <img src="assets/images/logo-mastercard.png" class="img-responsive">
+                    <img src="assets/images/logo-atmbersama.png" class="img-responsive">
+                    <img src="assets/images/logo-permata.png" class="img-responsive">
+                    <img src="assets/images/logo-prima.png" class="img-responsive">
+                    <img src="assets/images/logo-alto.png" class="img-responsive">
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-12">
+                    <p>Aktivasi instan dengan e-Payment. Hosting dan domain langsung aktif!</p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-9">
+                    <p>Copyright &copy;2016 Niagahoster | Hosting powered by PHP7, CloudLinux, CloudFlare, BitNinja and DC Biznet Technovillage Jakarta<br>
+                    Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud comoputing technology</p>
+                </div>
+                <div class="col-md-3">
+                    Syarat dan Ketentuan | Kebijakan Privasi
                 </div>
             </div>
         </div>
